@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Timer e musicas</title>
+</head>
+<body theme="dark">
+    <main>
+        <button id="light">   </button>
+        <!-- <img id="light" src="/focus02/dark ou light/icon.svg" alt=""> -->
+        <div class="relogio">
+            <div class="timer">
+                <span class="minutos">25</span>
+                <span>:</span>
+                <span class="segundos">00</span>
+            </div>
+            <div class="controle">
+                <button class="play"> <img src="./butão/play.png" alt=""> </button>
+                <button class="stop"> <img src="./butão/stop.png" alt=""> </button>
+                <button class="mais"> <img src="./butão/+.png" alt=""> </button>
+                <button class="menos"> <img src="./butão/-.png" alt=""> </button>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="figura">
+                <audio  class="floresta" src="audio/Floresta.wav"></audio>
+                <button class="figura01"> <img class="img01" src="icons/Vector (3).svg" alt=""> <img src="slider/Slider (3).svg" alt=""> </button>
+                <audio class="chuva" src="audio/Chuva.wav"></audio>
+                <button class="figura02 "><img src="./icons/Vector.svg " alt=""> <img src="slider/Slider.svg" alt=""> </button>
+            </div>
+            <div class="figura">
+                <audio class="cafe" src="audio/Cafeteria.wav" > </audio>
+                <button class="figura03"> <img src="icons/Vector (2).svg" alt=""> <img src="slider/Slider (2).svg" alt=""> </button>
+                <audio class="lareira" src="audio/Lareira.wav"></audio>
+                <button class="figura04"> <img src="icons/Vector (1).svg" alt=""> <img src="slider/Slider (1).svg" alt=""> </button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

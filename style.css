@@ -1,0 +1,111 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    gap: 15.0rem;
+}
+
+span {
+     font-family: 'Roboto', sans-serif;;
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.7rem;
+}
+
+.figura {
+    display: flex;
+}
+
+.figura button {
+    width: 13.8rem;
+    height: 15.2rem;
+    background: #E1E1E6;
+    border-radius: 2.4rem;
+    margin: 3.2rem;
+}
+
+.btnActive {
+    background: #02799D !important; 
+} 
+
+.btnActive img {
+    filter: invert(100%);
+}
+
+.figura button:hover img {
+    filter: invert(100%);
+}
+
+.figura button:hover {
+    background: #02799D
+}
+
+
+.controle button {
+    border-radius: 50%;
+   margin-right: 3.8rem;
+   
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ #light {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5.0rem 5.0rem 0 0 ;
+    background-image: url('./dark-ou-light/lua.svg');
+    background-repeat: no-repeat;
+    padding: 25px;
+    background-color: transparent;
+    border: 0;
+}
+
+[theme='dark'] main{
+    background-color: black;
+}
+
+[theme='dark']  button{
+  
+    background-color: black;
+}
+
+[theme='dark'] .figura button{
+    background-color: #29292E;
+}
+
+[theme='dark'] .figura button:hover {
+    background-color: #0A3442;
+}
+
+[theme='dark'] .btnActive {
+    background:  #0A3442 !important; 
+} 
+
+[theme='dark'] .figura button img{
+    filter: invert(100%);
+}
+
+[theme='dark'] span{
+    color: white;
+}
+
